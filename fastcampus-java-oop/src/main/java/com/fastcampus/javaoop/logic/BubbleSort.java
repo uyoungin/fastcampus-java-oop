@@ -3,8 +3,9 @@ package com.fastcampus.javaoop.logic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BubbleSort <T extends Comparable<T>> {
+public class BubbleSort <T extends Comparable<T>> implements Sort<T> {
 
+    @Override //꼭 없어도 상관은 없음
     public List<T> sort(List<T> list){
         List<T> output = new ArrayList<>(list);
 
@@ -20,5 +21,4 @@ public class BubbleSort <T extends Comparable<T>> {
 
         return output;
     }
-
 }
