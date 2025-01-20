@@ -8,7 +8,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BubbleSortTest {
-    
     @DisplayName("버블소트 - 리스트를 넣으면 정렬된 결과를 보여준다")
     @Test
     void given_List_WhenExecuting_ThenReturnSortedList(){
